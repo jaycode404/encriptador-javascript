@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/build/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo__div">
+        <h1>Encriptador</h1>
+      </div>
+      <h3 class="informacion">Solo letras minusculas y sin acentos</h3>
+    </header>
+    <main>
+      <section>
+        <div class="contenedor">
+          <div class="primera">
+            <textarea
+              class="input1 text-area"
+              placeholder="Ingresa el texto aqui"
+            ></textarea>
+            <div class="botones">
+              <button class="btn-encriptar" onclick="btnEncriptar()">
+                Encriptar
+              </button>
+              <button class="btn-desencriptar" onclick="btnDesencriptar()">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+          <div class="segunda">
+            <textarea
+              id="miInput"
+              class="mensaje"
+              placeholder="Texto encriptado"
+            ></textarea>
+            <div>
+              <button id="botonCopiar" class="copiar">Copiar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/build/js/bundle.min.js"></script>
+  </body>
+</html>
